@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="feedback_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <title>Обратная связь</title>
+</head>
+    
+<body>
+     <div class="container">
+         <div class="content">
+             <div class="box">
+               <form action="https://httpbin.org/post" method="post">
+                 <input type="text" placeholder="ФИО" />
+               </form>
+               <form action="https://httpbin.org/post" method="post">
+                 <input type="text" placeholder="email" />
+               </form>
+               <form action="https://httpbin.org/post" method="post">
+                 <p><b>Откуда узнали про нас</b><Br>
+                 <input type="radio" id="contactChoice1" name="contact">
+                 <label for="contactChoice1">От друга</label>
+                 <input type="radio" id="contactChoice2" name="contact">
+                 <label for="contactChoice2">Из интернета</label></Br></p>
+               </form>
+               <form action="https://httpbin.org/post" method="post">
+                 <select size="1" style="width: 150px">
+                 <option disabled>Выберите опцию</option>
+                 <option value="1">Предложение</option>
+                 <option value="2">Жалоба</option></select>
+               </form>
+               <form action="https://httpbin.org/post" method="post">
+                 <textarea placeholder="Сообщение"></textarea>
+               </form>
+               <form action="https://httpbin.org/post" method="post">
+                 <p><input type="file"></p>
+               </form>
+               <form action="https://httpbin.org/post" method="post">
+                 <p><input type="checkbox">Даю согласие на обработку персональных данных</p>
+               </form>
+             </div>
+             <div class="button">
+                 <input type="button" value="Отправить" />
+            </div>
+         </div>
+     </div>
+</body>
+</html>
