@@ -31,5 +31,7 @@ body {
   
   form{
     margin-bottom: 10px;
+    text-align: center;
+    flex-direction: column;
   }
   
