@@ -16,6 +16,10 @@
     align-items: center; 
   }
 
+  .nav:hover, .autorization:hover, .nav-item:hover{
+    color: Peru;
+}
+
   .container{
     margin: 0px 45px;
   }

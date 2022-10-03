@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
-    <title>Обратная связь</title>
+    <?php require "title.php"; ?>
 </head>
     
 <body>
@@ -15,10 +15,10 @@
             <div class="header-line">
                 <h1 class="h">Моя страница</h1>
                 
-                    <a class="nav-item" href="index.html">Главная</a>
+                    <a class="nav-item" href="index.php">Главная</a>
                     <a class="nav-item" href="#contact">Контакты</a>
                     <a class="nav-item" href="@">Достижения</a>
-                    <a class="autorization" href="autorization.html">Авторизация</a>
+                    <a class="autorization" href="autorization.php">Авторизация</a>
                
             </div>
         </div>    
@@ -41,7 +41,8 @@
         <div class="header-line">
             <p class="foot" id = "email">Почта: olga.boyunova@gmail.com</p>
             <p class="foot" id = "contact">Телефон: 89778010143</p>
-            <a class="nav" href="feedback.html">Обратная связь</a>
+            <a class="nav" href="feedback.php">Обратная связь</a>
+            <p class="foot" id = "date"><?php require "date.php"; ?></p>
         </div>   
     </div>
 </body>

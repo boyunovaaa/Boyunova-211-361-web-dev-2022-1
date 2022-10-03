@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.h{
+h1{
     color: black;
     margin-right: 50px;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -55,8 +55,8 @@
 
 .person{
     position: absolute;
-    top: 50%;
-    left: 87%;
+    top: 43%;
+    left: 64%;
 }
 
 .footer{
@@ -71,22 +71,26 @@
 }
 
 .table{
-    position: absolute;
-    top: 17%;
-    left: 1%;
+    /*position: absolute;
+    top: 17%;*/
+    padding-top: 2%;
+    text-align: center;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 11pt;
 }
 
-.table_2{
+.spisok{
     position: absolute;
-    top: 37%;
-    left: 1%;
+    top: 40%;
+    left: 7%;
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 11pt;
+    font-size: 12pt;
+    background-color: white;
+    box-shadow: 1px 1px 3px #777;
 }
 
 caption{
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 13pt;
 }
+
