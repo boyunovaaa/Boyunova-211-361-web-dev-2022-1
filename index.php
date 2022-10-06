@@ -16,7 +16,7 @@
             <h1>Моя страница</h1>
             
                 <a class="nav-item" href="index.php">Главная</a>
-                <!-- a class = "nav-item" href="<!- ?php	
+                <!-- a href="<!- ?php	
 
                     $name='Главная'; 
                     $link='index.php';	
