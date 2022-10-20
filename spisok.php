@@ -1,4 +1,13 @@
 <?php
+include "dbconnect.php";
+// Выводим результат из БД
+$sql = mysqli_query($conn, 'SELECT * FROM `Определение`');
+  while ($result = mysqli_fetch_array($sql)) {
+	echo '<dl>'.'<dt>' .$result['Термин'].'</dt>'.'<dd>'. $result['Определение'].'</dd>'.'</dl>';
+  }
+
+/*
+<?php
 
 $array = array(
 	'Список выполненных заданий:',
@@ -13,9 +22,15 @@ $array = array(
     'Форма обратной связи',
 );
 
-echo '<h2><strong>' . $array[0] . '</h2></strong><ol><li><i>' . $array[1] . '</i><ul><li>' . 
-    implode('</li><li>', array_slice($array, 2, 5)) . '</li></ul></li><li><i>' . $array[7] . '</i><ul><li>' . 
-    implode('</li><li>', array_slice($array, 6, 8)) . '</li></ul></li></ol>';
+echo '<h2>' . $array[0] . '</h2>
+<ol><li><i>' . $array[1] . '</i>
+<ul><li>' .     implode('</li>
+<li>', array_slice($array, 2, 5)) . '</li></ul></li>
 
+<li><i>' . $array[7] . '</i><ul><li>' . 
+    implode('</li>
+<li>', array_slice($array, 6, 8)) . '</li></ul></li></ol>';
+
+*/
 
 ?>

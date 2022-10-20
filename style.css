@@ -48,15 +48,15 @@ h1{
 }
 
 .header-down{
-    height: 494px;
+    height: 510px;
     background-size: 100%;    
     background-image: url(background.jpg);
 }
 
 .person{
     position: absolute;
-    top: 43%;
-    left: 64%;
+    top: 55%;
+    left: 32%;
 }
 
 .footer{
@@ -81,8 +81,8 @@ h1{
 
 .spisok{
     position: absolute;
-    top: 40%;
-    left: 7%;
+    top: 15%;
+    left: 13%;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 12pt;
     background-color: white;

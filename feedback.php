@@ -54,22 +54,26 @@
   <div class="body2">
      <div class="container2">
          <div class="content">
-            <form action="https://httpbin.org/post" method="post">
-              <p><input type="text" placeholder="ФИО"/></p>
-              <p><input type="text" placeholder="email" /></p>
-              <p><label><b>Откуда узнали про нас</b></label><br>
-              <input type="radio" id="contactChoice1" name="contact">
-              <label for="contactChoice1">От друга</label>
-              <input type="radio" id="contactChoice2" name="contact">
-              <label for="contactChoice2">Из интернета</label></p>
-              <p><select size="1" style="width: 150px">
-              <option disabled>Выберите опцию</option>
-              <option value="1">Предложение</option>
-              <option value="2">Жалоба</option></select></p>
-              <p><textarea placeholder="Сообщение"></textarea></p>
-              <p><input type="file"></p>
-              <p><input type="checkbox">Даю согласие на обработку персональных данных</p>
-              <input type="submit" value="Отправить" />
+         <form action="home.php" method="post">
+                <p><input type="text" name="fio" placeholder="ФИО" value="<?php if (isset($_GET['fio'])){
+                        echo $_GET['fio']; }?>"/></p>
+                <p><input type="text" name="email" placeholder="email" value="<?php if (isset($_GET['email'])){
+                        echo $_GET['email']; }?>"/></p>
+                <p><label><b>Откуда узнали про нас</b></label><br>
+                <input type="radio" id="contactChoice1" name="source" value="1" <?php if (isset($_GET['source']) & $_GET['source']='1'){
+                        echo 'checked';}?>/>
+                <label for="contactChoice1">От друга</label>
+                <input type="radio" id="contactChoice2" name="source" value="2" <?php if (isset($_GET['source']) & $_GET['source']='2'){
+                        echo 'checked';}?>/>
+                <label for="contactChoice2">Из интернета</label></p>
+                <p><select size="1" name="category" style="width: 150px">
+                <option disabled>Выберите опцию</option>
+                <option value="1">Предложение</option>
+                <option value="2">Жалоба</option></select></p>
+                <p><textarea name="text" placeholder="Сообщение"></textarea></p>
+                <p><input name="file" type="file"></p>
+                <p><input type="checkbox">Даю согласие на обработку персональных данных</p>
+                <input type="submit" value="Отправить" />
             </form>
          </div>
      </div>
